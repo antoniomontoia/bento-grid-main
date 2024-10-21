@@ -1,0 +1,54 @@
+/* Colors */
+
+$purple100: hsl(254, 88%, 90%);
+$purple500: hsl(256, 67%, 59%);
+$yellow100: hsl(31, 66%, 93%);
+$yellow500: hsl(39, 100%, 71%);
+$white: hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 7%);
+
+/* Font and FSizes */
+
+/* - Family: [DM Sans](https://fonts.google.com/specimen/DM+Sans)
+- Weights: 400, 500
+
+- Font size (paragraph): 1.125rem */
+
+$dmsans: 'DM Sans';
+$paragraph: 1.125rem;
+
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  * {
+    margin: 0;
+  }
+  
+  body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  #root, #__next {
+    isolation: isolate;
+  }
+
