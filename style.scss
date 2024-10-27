@@ -81,7 +81,7 @@ $paragraph: 1.125rem;
   body {
     display: flex;
     justify-content: center;
-    height: 100dvh;
+    height: 150dvh;
     background-color: hsl(0, 0%, 96);
   }
 
@@ -90,7 +90,6 @@ $paragraph: 1.125rem;
     margin: 4vw;
     width: 90vw;
     gap: 1.75rem;
-    max-width: 28.125rem;
     grid-template-areas:
      "social"
      "manage"
@@ -245,6 +244,30 @@ $paragraph: 1.125rem;
   
   }
 
+
+  @media screen and (min-width: 33.75rem) {
+
+    .grid {
+
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+    "social create"
+    "schedule maintain"
+    "write grow"
+    "faster manage"
+    ; 
+
+    }
+
+    .grid__3 {
+
+      img {
+        width: 100% !important;
+      }
+    }
+
+  }
+
     
     @media screen and (min-width: 62.5rem) {
 
@@ -265,8 +288,6 @@ $paragraph: 1.125rem;
     "write faster grow grow"
     ; 
 
-    max-width: 100rem;  
-
 
     img {
       max-width: 150%;
@@ -279,7 +300,7 @@ $paragraph: 1.125rem;
     }
 
     h3 {
-      font-size: calc(1.75rem + 0.5vw);
+      font-size: calc(1.75rem + 0.3vw);
     }
 
     .grid__1, .grid__2, .grid__3, .grid__4, .grid__5, .grid__6, .grid__7, .grid__8 {
@@ -299,6 +320,11 @@ $paragraph: 1.125rem;
       
       gap: 1.75rem;
       padding: 1rem 2rem !important;
+      overflow: hidden;
+
+      img {
+        width: 150% !important;
+      }
       
     }
 
@@ -316,6 +342,13 @@ $paragraph: 1.125rem;
       }
     }
 
+    .grid__1, .grid__4, .grid__6 {
+      p {
+        font-size: calc(1.25rem + 0.05vw);
+      }
+    }
+
+
     .grid__4 {
       overflow: hidden;
       text-align: start !important;
@@ -328,15 +361,30 @@ $paragraph: 1.125rem;
 
     .grid__5 {
       flex-direction: row !important;
+
+      h2 {
+        text-align: start;
+      }
     }
 
-    .grid__2, .grid__3, .grid__7, .grid__8 {
+   .grid__3, .grid__7, .grid__8 {
 
       img {
         width: 100% !important;
       }
     }
 
+    .grid__6 {
+      padding: 1rem 2rem !important;
+      h2 {
+        font-size: calc(1.5rem + 2.25vw) !important;
+      }
+
+      img {
+        width: 75% !important;
+      }
+
+    }
     .grid__8 {
       justify-content: space-around;
     }

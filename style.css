@@ -66,7 +66,7 @@ p {
 body {
   display: flex;
   justify-content: center;
-  height: 100dvh;
+  height: 150dvh;
   background-color: hsl(0, 0%, 96%);
 }
 
@@ -75,7 +75,6 @@ body {
   margin: 4vw;
   width: 90vw;
   gap: 1.75rem;
-  max-width: 28.125rem;
   grid-template-areas: "social" "manage" "maintain" "schedule" "grow" "faster" "create" "write";
 }
 .grid .grid__1, .grid .grid__2, .grid .grid__3, .grid .grid__4, .grid .grid__5, .grid .grid__6, .grid .grid__7, .grid .grid__8 {
@@ -191,12 +190,20 @@ body {
   width: 80%;
 }
 
+@media screen and (min-width: 33.75rem) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "social create" "schedule maintain" "write grow" "faster manage";
+  }
+  .grid__3 img {
+    width: 100% !important;
+  }
+}
 @media screen and (min-width: 62.5rem) {
   .grid {
     grid-template-columns: repeat(4, 1fr);
     grid-auto-rows: 1fr;
     grid-template-areas: "create social social schedule" "create social social schedule" "create social social schedule" "create social social schedule" "create manage maintain schedule" "write manage maintain schedule" "write manage maintain schedule" "write faster grow grow" "write faster grow grow" "write faster grow grow";
-    max-width: 100rem;
   }
   .grid img {
     max-width: 150%;
@@ -205,7 +212,7 @@ body {
     font-size: calc(2.5rem + 1.5vw);
   }
   h3 {
-    font-size: calc(1.75rem + 0.5vw);
+    font-size: calc(1.75rem + 0.3vw);
   }
   .grid__1, .grid__2, .grid__3, .grid__4, .grid__5, .grid__6, .grid__7, .grid__8 {
     height: 100%;
@@ -217,6 +224,10 @@ body {
   .grid__2 {
     gap: 1.75rem;
     padding: 1rem 2rem !important;
+    overflow: hidden;
+  }
+  .grid__2 img {
+    width: 150% !important;
   }
   .grid__3 {
     justify-content: flex-start;
@@ -225,6 +236,9 @@ body {
   }
   .grid__2 h2, .grid__3 h2 {
     font-size: calc(1.4rem + 1vw);
+  }
+  .grid__1 p, .grid__4 p, .grid__6 p {
+    font-size: calc(1.25rem + 0.05vw);
   }
   .grid__4 {
     overflow: hidden;
@@ -236,8 +250,20 @@ body {
   .grid__5 {
     flex-direction: row !important;
   }
-  .grid__2 img, .grid__3 img, .grid__7 img, .grid__8 img {
+  .grid__5 h2 {
+    text-align: start;
+  }
+  .grid__3 img, .grid__7 img, .grid__8 img {
     width: 100% !important;
+  }
+  .grid__6 {
+    padding: 1rem 2rem !important;
+  }
+  .grid__6 h2 {
+    font-size: calc(1.5rem + 2.25vw) !important;
+  }
+  .grid__6 img {
+    width: 75% !important;
   }
   .grid__8 {
     justify-content: space-around;
