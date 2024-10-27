@@ -177,6 +177,7 @@ $paragraph: 1.125rem;
 
       img {
         overflow: hidden;
+        max-height: 100%;
       }
 
       h2 {
@@ -367,10 +368,10 @@ $paragraph: 1.125rem;
       }
     }
 
-   .grid__3, .grid__7, .grid__8 {
+    .grid__7 {
 
       img {
-        width: 100% !important;
+        max-width: 17.5rem !important;
       }
     }
 

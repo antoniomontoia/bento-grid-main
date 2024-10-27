@@ -140,6 +140,7 @@ body {
 }
 .grid .grid__5 img {
   overflow: hidden;
+  max-height: 100%;
 }
 .grid .grid__5 h2 {
   color: hsl(0, 0%, 100%);
@@ -253,8 +254,8 @@ body {
   .grid__5 h2 {
     text-align: start;
   }
-  .grid__3 img, .grid__7 img, .grid__8 img {
-    width: 100% !important;
+  .grid__7 img {
+    max-width: 17.5rem !important;
   }
   .grid__6 {
     padding: 1rem 2rem !important;
