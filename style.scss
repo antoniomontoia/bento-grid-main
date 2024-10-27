@@ -60,7 +60,7 @@ $paragraph: 1.125rem;
   h2 {
     letter-spacing: -1.1pt;
     line-height: 105%;
-    font-size: calc(1.75rem + 1vw);
+    font-size: calc(1.5rem + 1vw);
 
   }
 
@@ -86,6 +86,7 @@ $paragraph: 1.125rem;
   }
 
   .grid {
+    min-height: 62.5rem;
     display: grid;
     margin: 4vw;
     width: 90vw;
@@ -175,7 +176,6 @@ $paragraph: 1.125rem;
       grid-area: grow;
 
       img {
-        width: 100%;
         overflow: hidden;
       }
 

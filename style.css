@@ -46,7 +46,7 @@ h1 {
 h2 {
   letter-spacing: -1.1pt;
   line-height: 105%;
-  font-size: calc(1.75rem + 1vw);
+  font-size: calc(1.5rem + 1vw);
 }
 
 h3 {
@@ -71,6 +71,7 @@ body {
 }
 
 .grid {
+  min-height: 62.5rem;
   display: grid;
   margin: 4vw;
   width: 90vw;
@@ -138,7 +139,6 @@ body {
   grid-area: grow;
 }
 .grid .grid__5 img {
-  width: 100%;
   overflow: hidden;
 }
 .grid .grid__5 h2 {
